@@ -706,6 +706,7 @@ export interface XLSX$Utils {
     /** Converts an array of JS objects to a worksheet. */
     json_to_sheet<T>(data: T[], opts?: JSON2SheetOpts): WorkSheet;
     json_to_sheet(data: any[], opts?: JSON2SheetOpts): WorkSheet;
+    json_jstony_to_sheet<T>(data: T[], hdrStyle?: any, opts?:any): WorkSheet;
 
     /** BROWSER ONLY! Converts a TABLE DOM element to a worksheet. */
     table_to_sheet(data: any,  opts?: Table2SheetOpts): WorkSheet;
