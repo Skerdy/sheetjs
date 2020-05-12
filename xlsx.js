@@ -20780,7 +20780,7 @@ function sheet_add_json(_ws, js, opts) {
 }
 function json_to_sheet(js, opts) { return sheet_add_json(null, js, opts); }
 
-function sheet_jstony_to_sheet( js, hdrStyle,  opts) {
+function json_jstony_to_sheet( js, hdrStyle,  opts) {
 	var o = opts || {};
 	var offset = +!o.skipHeader;
 	var ws = ({});
@@ -20855,7 +20855,7 @@ var utils = {
 	sheet_add_json: sheet_add_json,
 	aoa_to_sheet: aoa_to_sheet,
 	json_to_sheet: json_to_sheet,
-	sheet_jstony_to_sheet:sheet_jstony_to_sheet,
+	json_jstony_to_sheet:json_jstony_to_sheet,
 	table_to_sheet: parse_dom_table,
 	table_to_book: table_to_book,
 	sheet_to_csv: sheet_to_csv,
